@@ -8,12 +8,12 @@ part of 'sample_page.dart';
 
 class $SamplePageArgs {
   final int haha;
-  final Key key;
+  final Key? key;
   final String text;
   final Color? color;
   $SamplePageArgs(
     this.haha, {
-    required this.key,
+    this.key,
     required this.text,
     this.color,
   });
@@ -32,12 +32,12 @@ Widget $generateSamplePage(dynamic arguments) {
 
 class $SamplePageNamedArgs {
   final double hehe;
-  final Key key;
+  final Key? key;
   final String text;
   final Color? color;
   $SamplePageNamedArgs(
     this.hehe, {
-    required this.key,
+    this.key,
     required this.text,
     this.color = const Color(255),
   });

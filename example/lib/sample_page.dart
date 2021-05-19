@@ -10,20 +10,25 @@ class SamplePage extends StatelessWidget {
 
   const SamplePage(
     int haha, {
-    required Key key,
+    Key? key,
     required this.text,
     this.color,
   }) : super(key: key);
 
   const SamplePage.named(
     double hehe, {
-    required Key key,
+    Key? key,
     required this.text,
     this.color = const Color(0xFF),
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Text(
+        text,
+        style: TextStyle(color: color),
+      ),
+    );
   }
 }
