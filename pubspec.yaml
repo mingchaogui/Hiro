@@ -1,7 +1,7 @@
 name: hiro
-description: A new Flutter project.
+description: Generate arguments class and builder function for widget page.
 version: 0.0.1
-homepage:
+homepage: https://github.com/mingchaogui/hiro
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -13,7 +13,8 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
 
-  source_gen: 1.0.0
+  build: ^2.0.0
+  source_gen: ^1.0.0
 
 dev_dependencies:
   flutter_test:
