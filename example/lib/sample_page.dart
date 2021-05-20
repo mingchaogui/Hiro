@@ -1,4 +1,4 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:hiro/hiro.dart';
 
 part 'sample_page.g.dart';
@@ -26,10 +26,15 @@ class SamplePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        text,
-        style: TextStyle(color: color),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Hiro example app'),
+      ),
+      body: Center(
+        child: Text(
+          text,
+          style: TextStyle(color: color),
+        ),
       ),
     );
   }
