@@ -19,7 +19,7 @@ class $SamplePageArgs {
   });
 }
 
-Widget $generateSamplePage(dynamic arguments) {
+Widget $buildSamplePage(BuildContext context, dynamic arguments) {
   if (arguments is! $SamplePageArgs)
     throw HiroArgumentsException(arguments: arguments);
   return SamplePage(
@@ -28,6 +28,10 @@ Widget $generateSamplePage(dynamic arguments) {
     text: arguments.text,
     color: arguments.color,
   );
+}
+
+Widget $buildSamplePageBlank(BuildContext context, dynamic arguments) {
+  return SamplePage.blank();
 }
 
 class $SamplePageNamedArgs {
@@ -43,7 +47,7 @@ class $SamplePageNamedArgs {
   });
 }
 
-Widget $generateSamplePageNamed(dynamic arguments) {
+Widget $buildSamplePageNamed(BuildContext context, dynamic arguments) {
   if (arguments is! $SamplePageNamedArgs)
     throw HiroArgumentsException(arguments: arguments);
   return SamplePage.named(

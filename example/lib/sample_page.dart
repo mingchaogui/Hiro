@@ -15,6 +15,8 @@ class SamplePage extends StatelessWidget {
     this.color,
   }) : super(key: key);
 
+  const SamplePage.blank() : this(0, text: '');
+
   const SamplePage.named(
     double hehe, {
     Key? key,
